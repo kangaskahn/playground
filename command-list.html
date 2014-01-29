@@ -11,9 +11,9 @@ code { color:#000; }
 <body>
 <h1>GIT NOTES</h1>
 
-<h3>//COMMAND LIST</h3>
+<h3>//1. Command List</h3>
 
-<ul>
+<ol>
 	<li><code>git init</code> :: creates empty repository it folder</li>
 
 	<li><code>git status</code> :: See how the repository status has changed</li>
@@ -21,7 +21,8 @@ code { color:#000; }
 	<li><code>git add &#60;filename&#62;</code> :: Adds FILENAME to the git tracker</li>
 			<ul>
 				<li><code>git add '*.txt'</code> :: adds wildcards of all the same filetype</li>
-				<li><code>git add *</code> :: adds all the files</li>
+				<li><code>git add *</code> :: adds all the files for committing</li>
+				<li><code>git add .</code> :: Adds current <em>directory</em> for committing</li>
 			</ul>
 	<li><code>git commit -m '&#60;commit message&#62;'</code> :: Commits the changes from staging to the repository</li>
 
@@ -34,7 +35,9 @@ code { color:#000; }
 			where &#60;name&#62; = name of the remote
 
 	<li><code>git push -u &#60;remote name&#62; &#60;default local branch name&#62;</code> :: Pushes updates (The -u remembers the parameters so next time you run just run</code> :: git push)
-			git push -u origin master
+			<ul>
+				<li><code>git push -u origin master</code> (Example code)</li>
+			</ul>
 
 	<li><code>git pull</code> :: Pulls other people's commits and changes from the remote repository
 
@@ -52,7 +55,7 @@ code { color:#000; }
 	<li><code>git rm</code> :: Removes files from disk and will stage the removal of those files
 
 	<li><code>git merge &#60;branch name&#62;</code> :: Merges one branch with the other. Make sure you are in the main branch (use git checkout &#60;branch name&#62;)
-<ul>
+</ol>
 </body>
 </html>
 
