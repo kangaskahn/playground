@@ -18,34 +18,35 @@
 
 <li>git status :: See how the repository status has changed</li>
 
-<li>git add <filename> :: Adds FILENAME to the git tracker
-		git add '*.txt' :: adds wildcards of all the same filetype
-		git add * :: adds all the files
-
-<li>git commit -m '<commit message>' :: Commits the changes from staging to the repository
+<li>git add &#60;filename&#62; :: Adds FILENAME to the git tracker</li>
+		<ul>
+		<li>git add '*.txt' :: adds wildcards of all the same filetype</li>
+		<li>git add * :: adds all the files</li>
+		</ul>
+<li>git commit -m '&#60;commit message&#62;' :: Commits the changes from staging to the repository</li>
 
 <li>git log :: "journal" of all the commits
 
-<li>git remote add <name> <url of repository> :: Adds remote repository URL for pushes
-		where <name>= name of the remote
+<li>git remote add &#60;name&#62; &#60;url of repository&#62; :: Adds remote repository URL for pushes
+		where &#60;name&#62; = name of the remote
 
-<li>git push -u <remote name> <default local branch name> :: Pushes updates (The -u remembers the parameters so next time you run just run :: git push)
+<li>git push -u &#60;remote name&#62; &#60;default local branch name&#62; :: Pushes updates (The -u remembers the parameters so next time you run just run :: git push)
 		git push -u origin master
 
 <li>git pull :: Pulls other people's commits and changes from the remote repository
 
 <li>git diff HEAD:: Tells what is different from our last commit (the HEAD shows the last commit you made)
 
-<li>git reset <filename> :: Unstage files
+<li>git reset &#60;filename&#62; :: Unstage files
 
-<li>git branch <branch name> :: Creates a new branch (without a branchname will show all branches [I think])
-		git branch -d <branch name> :: deletes a branch (useful for doing clean ups)
+<li>git branch &#60;branch name&#62; :: Creates a new branch (without a branchname will show all branches [I think])
+		git branch -d &#60;branch name&#62; :: deletes a branch (useful for doing clean ups)
 
-<li>git checkout <branch name> :: Changes branches from one to the other
+<li>git checkout &#60;branch name&#62; :: Changes branches from one to the other
 
 <li>git rm :: Removes files from disk and will stage the removal of those files
 
-<li>git merge <branch name> :: Merges one branch with the other. Make sure you are in the main branch (use git checkout <branch name>)
+<li>git merge &#60;branch name&#62; :: Merges one branch with the other. Make sure you are in the main branch (use git checkout &#60;branch name&#62;)
 
 </body>
 </html>
