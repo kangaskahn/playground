@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.h2 {
+h2 {
 	font-family:helvetica, arial, sans-serif;
 }
 
@@ -14,39 +14,42 @@
 <h4>//COMMAND LIST</h4>
 
 <ul>
-<li><em>git init</em></em> :: creates empty repository it folder</li>
+<li><code>git init</code> :: creates empty repository it folder</li>
 
-<li><em>git status</em> :: See how the repository status has changed</li>
+<li><code>git status</code> :: See how the repository status has changed</li>
 
-<li><em>git add &#60;filename&#62;</em> :: Adds FILENAME to the git tracker</li>
+<li><code>git add &#60;filename&#62;</code> :: Adds FILENAME to the git tracker</li>
 		<ul>
-		<li><em>git add '*.txt'</em> :: adds wildcards of all the same filetype</li>
-		<li><em>git add *</em> :: adds all the files</li>
+		<li><code>git add '*.txt'</code> :: adds wildcards of all the same filetype</li>
+		<li><code>git add *</code> :: adds all the files</li>
 		</ul>
-<li><em>git commit -m '&#60;commit message&#62;'</em> :: Commits the changes from staging to the repository</li>
+<li><code>git commit -m '&#60;commit message&#62;'</code> :: Commits the changes from staging to the repository</li>
 
-<li><em>git log</em> :: "journal" of all the commits
+<li><code>git log</code> :: "journal" of all the commits
+		<ul>
+			<li><code>git log --pretty=oneline</code> :: Changes view to one line; neater</li>
+		</ul>
 
-<li><em>git remote add &#60;name&#62; &#60;url of repository&#62;</em> :: Adds remote repository URL for pushes
+<li><code>git remote add &#60;name&#62; &#60;url of repository&#62;</code> :: Adds remote repository URL for pushes
 		where &#60;name&#62; = name of the remote
 
-<li><em>git push -u &#60;remote name&#62; &#60;default local branch name&#62;</em> :: Pushes updates (The -u remembers the parameters so next time you run just run</em> :: git push)
+<li><code>git push -u &#60;remote name&#62; &#60;default local branch name&#62;</code> :: Pushes updates (The -u remembers the parameters so next time you run just run</code> :: git push)
 		git push -u origin master
 
-<li><em>git pull</em> :: Pulls other people's commits and changes from the remote repository
+<li><code>git pull</code> :: Pulls other people's commits and changes from the remote repository
 
-<li><em>git diff HEAD</em> :: Tells what is different from our last commit (the HEAD shows the last commit you made)
+<li><code>git diff HEAD</code> :: Tells what is different from our last commit (the HEAD shows the last commit you made)
 
-<li><em>git reset &#60;filename&#62;</em> :: Unstage files
+<li><code>git reset &#60;filename&#62;</code> :: Unstage files
 
-<li><em>git branch &#60;branch name&#62;</em> :: Creates a new branch (without a branchname will show all branches [I think])
-		git branch -d &#60;branch name&#62;</em> :: deletes a branch (useful for doing clean ups)
+<li><code>git branch &#60;branch name&#62;</code> :: Creates a new branch (without a branchname will show all branches [I think])
+		git branch -d &#60;branch name&#62;</code> :: deletes a branch (useful for doing clean ups)
 
-<li><em>git checkout &#60;branch name&#62;</em> :: Changes branches from one to the other
+<li><code>git checkout &#60;branch name&#62;</code> :: Changes branches from one to the other
 
-<li><em>git rm</em> :: Removes files from disk and will stage the removal of those files
+<li><code>git rm</code> :: Removes files from disk and will stage the removal of those files
 
-<li><em>git merge &#60;branch name&#62;</em> :: Merges one branch with the other. Make sure you are in the main branch (use git checkout &#60;branch name&#62;)
+<li><code>git merge &#60;branch name&#62;</code> :: Merges one branch with the other. Make sure you are in the main branch (use git checkout &#60;branch name&#62;)
 
 </body>
 </html>
