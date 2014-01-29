@@ -3,8 +3,8 @@
 <head>
 <style type="text/css">
 body { font-family:helvetica, arial, sans-serif; font-size:16px;}
-ul { list-style-type:none; }
-ul li { margin-bottom:15px; color:#9a9a9a; }
+ol { list-style-type:none; }
+ol li { margin-bottom:15px; color:#9a9a9a; }
 code { color:#000; }
 </style>
 </head>
@@ -19,25 +19,25 @@ code { color:#000; }
 	<li><code>git status</code> :: See how the repository status has changed</li>
 
 	<li><code>git add &#60;filename&#62;</code> :: Adds FILENAME to the git tracker</li>
-			<ul>
+			<ol>
 				<li><code>git add '*.txt'</code> :: adds wildcards of all the same filetype</li>
 				<li><code>git add *</code> :: adds all the files for committing</li>
 				<li><code>git add .</code> :: Adds current <em>directory</em> for committing</li>
-			</ul>
+			</ol>
 	<li><code>git commit -m '&#60;commit message&#62;'</code> :: Commits the changes from staging to the repository</li>
 
 	<li><code>git log</code> :: "journal" of all the commits
-			<ul>
+			<ol>
 				<li><code>git log --pretty=oneline</code> :: Changes view to one line; neater</li>
-			</ul>
+			</ol>
 
 	<li><code>git remote add &#60;name&#62; &#60;url of repository&#62;</code> :: Adds remote repository URL for pushes
 			where &#60;name&#62; = name of the remote
 
 	<li><code>git push -u &#60;remote name&#62; &#60;default local branch name&#62;</code> :: Pushes updates (The -u remembers the parameters so next time you run just run</code> :: git push)
-			<ul>
+			<ol>
 				<li><code>git push -u origin master</code> (Example code)</li>
-			</ul>
+			</ol>
 
 	<li><code>git pull</code> :: Pulls other people's commits and changes from the remote repository
 
@@ -46,9 +46,9 @@ code { color:#000; }
 	<li><code>git reset &#60;filename&#62;</code> :: Unstage files
 
 	<li><code>git branch &#60;branch name&#62;</code> :: Creates a new branch (without a branchname will show all branches [I think])
-			<ul>
+			<ol>
 				<li><code>git branch -d &#60;branch name&#62;</code> :: deletes a branch (useful for doing clean ups)</li>
-			</ul>
+			</ol>
 
 	<li><code>git checkout &#60;branch name&#62;</code> :: Changes branches from one to the other
 
