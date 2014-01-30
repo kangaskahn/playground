@@ -1,5 +1,4 @@
-#Git Test
-=========
+#Git Playground
 
 ##Commands
 - git init :: creates empty repository it folder
